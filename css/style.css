@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/*grids*/
 main{
     display: grid;
     background-color: #bf4996;
@@ -18,8 +19,10 @@ main{
 }
 
 /*Propiedades para Header*/
+
+/*gradiente*/
 header{
-    background-color: #177348;
+    background-image: linear-gradient(to bottom, #177348, white);
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 2rem;
     padding-top: 1rem;
@@ -69,13 +72,16 @@ header nav ul li{
     padding: 1.25rem;
 }
 
+/*Transición*/
 header nav ul li a:hover{
     background: #2e0259;
+    font-weight: bold;
 }
 
 /*Propiedades para Section*/
+/*Gradiente*/
 section{
-    background-color: #bf4996;
+    background: radial-gradient(white, #bf4996);
     grid-area: section;
     display: flex;
     flex-direction: column;
@@ -188,8 +194,10 @@ form{
 }
 
 /*Propiedades para Footer*/
+
+/*Gradiente*/
 footer{
-    background-color: #177348;
+    background-image: linear-gradient(to top, #177348, white);
     padding: 2rem;
     grid-area: footer;
 }
