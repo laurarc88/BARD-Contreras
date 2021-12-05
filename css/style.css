@@ -1,0 +1,270 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: grid;
+    background-color: #bf4996;
+    height: 100vh;
+    grid-template-areas: "header"
+    "section"
+    "h2"
+    "img" "texto"
+    "img2" "texto2"
+    "footer";
+}
+
+/*Propiedades para Header*/
+header{
+    background-color: #177348;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    grid-area: header;
+    width: 100%;
+}
+
+header img{
+    display: flex;
+    flex-direction: row;
+}
+
+header nav{
+    width: 90%;
+    max-width: 62.5rem;
+    margin: 1.25rem auto;
+    background: #2a6e4e;
+}
+
+.menuResponsive{
+    display: none;
+}
+
+.tituloHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2e0259;
+    padding-top: 1rem;
+}
+
+.menu{
+    list-style: none;
+    overflow: hidden;
+}
+
+header nav ul li{
+    float: left;
+    justify-content: space-between;
+}
+
+.link{
+    text-decoration: none;
+    color: #bf4996;
+    display: inline-block;
+    padding: 1.25rem;
+}
+
+header nav ul li a:hover{
+    background: #2e0259;
+}
+
+/*Propiedades para Section*/
+section{
+    background-color: #bf4996;
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+}
+
+article{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 1rem;
+}
+
+.titulo{
+    text-align: center;
+    padding: 2rem;
+    color: #177348;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;;
+    background-image: url(../assets/img/portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+
+.texto{
+    color: #2e0259;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 2rem;
+    text-align: justify;
+    margin: 1rem;
+    display: inline-block;
+}
+
+.listaEnTexto{
+    padding: 0;
+    color: #2e0259;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+
+.imagenIzquierda{
+    width: 30rem;
+    height: 15rem;
+    object-fit: scale-down;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.imagenDerecha{
+    width: 30rem;
+    height: 15rem;
+    object-fit: scale-down;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.imgEquipo{
+    display: inline-block;
+    width: 20rem;
+    height: 20rem;
+    object-fit: scale-down;
+}
+
+
+.bordesRedondeados{
+    border-radius: 0.2rem;
+}
+
+#articulos{
+    display: inline-block;
+    text-align: justify;
+    padding: 0.3125rem;
+    margin-top: 0.625rem;
+}
+
+#articulos p{
+    color: #2e0259;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 2rem;
+    text-align: center;
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#talles {
+    display: inline-flex;
+}
+
+form{
+    padding: 0.3125rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedorTexto{
+    grid-area: texto;
+}
+
+.contenedorImg{
+    grid-area: img;
+}
+
+.contenedorTexto2{
+    grid-area: texto;
+}
+
+.contenedorImg{
+    grid-area: img;
+}
+
+/*Propiedades para Footer*/
+footer{
+    background-color: #177348;
+    padding: 2rem;
+    grid-area: footer;
+}
+
+.textoFooter{
+    text-align: center;
+    color: #2e0259;
+    padding: 0,5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.imgFooter{
+    width: 3rem;
+    height: 3rem;
+    padding-top: 1rem;
+    object-fit: scale-down;
+    display: inline;
+    justify-items: left;
+}
+
+
+/*intento de responsive*/
+@media screen and (max-width:768px) {
+    header nav{
+        width: 50%;
+        height: 100%;
+        margin: 0;
+        position: fixed;
+    }
+
+    header nav ul li{
+        display: block;
+        float: none;
+        border-bottom: 1px solid #2a6e4e;
+    }
+
+    .menuResponsive{
+        display: block;
+        width: 100%;
+        background: #2e0259;
+    }
+
+    .menuResponsive .botonMenu{
+        display: block;
+        padding: 1.25rem;
+    }
+
+    .imagenIzquierda{
+        display: inline-block;
+        justify-content: center;
+    }
+
+    .texto{
+        justify-content: justify;
+    }
+
+    article{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+    main{
+        grid-template-columns: 1fr;
+        grid-template-areas: "header"
+        "nav"
+        "section"
+        "img"
+        "texto"
+        "img2"
+        "texto2"
+        "footer";
+    }
+}
+ 

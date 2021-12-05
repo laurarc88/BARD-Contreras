@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="../css/style.css">    
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html"><img src="../assets/img/homeLogoBard.png" alt="logo BARD"></a>
+        <h1 class="tituloHeader">Buenos Aires Roller Derby</h1>
+
+         <!--Menu-->
+        <nav>
+            <ul class="menu">
+                <li><a class="link" href="../index.html">Home</a></li>
+                <li><a class="link" href="bard.html">BARD</a></li>
+                <li><a class="link" href="rollerderby.html">Qué es el roller derby</a></li>
+                <li><a class="link" href="merch.html">Merch</a></li>
+                <li><a class="link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <section>
+        <h2 class="titulo">Ponete en contacto con Buenos Aires Roller Derby!</h2>
+
+        <!--Formulario-->
+        <article>
+            <p class="texto">Ya sea porque quieres apoyarnos, proponernos proyectos o unirte, podes enviar tu mensaje por medio de este formulario.</p>
+            <form action="servidor.php" method="">
+                <fieldset>
+                    <legend>Escribinos</legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" placeholder="escribe tu nombre"> <br>
+
+                <label for="apellido">Pronombres</label>
+                <input type="text" name="apellido" placeholder="escribe tu apellido"> <br>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="usuario@servidor.com"> <br>
+
+                <!--Menu desplegable-->
+                <p>¿Qué información te gustaría recibir?</p>
+                <select name="motivo" id="motivo">
+                    <option value="info">Información general</option>
+                    <option value="reclutamiento">Quiero formar parte del equipo</option>
+                    <option value="prensa">Prensa</option>
+                    <option value="patrocinador">Patrocinio</option> 
+                </select>
+                        
+                <!--La idea sería que esto salga si en el menú desplegable se elige "quiero formar parte del equipo"-->
+                <div>¿Sabes patinar? (si no sabes, no te preocupes, nosotres te enseñamos)</div>
+                <label for="patina">Se patinar</label>
+                <input type="radio" name="patina" value="sabe">
+                <label for="patina">No se patinar</label>
+                <input type="radio" name="patina" value="nosabe">
+
+                <div>¿Qué rol te gustaría cumplir en la liga?</div>
+                <label for="roles">Patinadore</label>
+                <input type="checkbox" name="roles" value="patinadore"> 
+                <label for="roles">Oficial con patines</label>
+                <input type="checkbox" name="roles" value="oficialpatin">
+                <label for="roles">Oficial sin patines</label>
+                <input type="checkbox" name="roles" value="nso">
+                <label for="roles">Bench</label>
+                <input type="checkbox" name="roles" value="bench">
+
+                <!--Comentarios-->
+                <h3>Dejanos un comentario</h3>
+                <textarea class="bordesRedondeados" name="comentario" id="comentario" cols="30" rows="10"></textarea>
+
+                <!--Botones-->
+                <input class="bordesRedondeados" type="submit" value="Enviar formulario">
+                <input type="reset" value="Borrar formulario">
+
+                </fieldset>
+            </form>
+        </article>
+    </section>
+
+    <footer>
+        <a href="https://www.instagram.com/bard_jungla/?hl=es"><img class="imgFooter" src="../assets/img/igIcono.png" alt="logo instagram"></a>
+        <a href="https://www.facebook.com/LigaBuenosAiresRD"><img class="imgFooter" src="../assets/img/fbIcono.png" alt="logo facebook"></a>
+        <p class="textoFooter">Buenos Aires Roller Derby</p>
+    </footer>
+</body>
+</html>
