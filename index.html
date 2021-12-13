@@ -17,7 +17,7 @@
             <h1 class="tituloHeader">Buenos Aires Roller Derby</h1>
             <!--Menu-->
             <nav class="navbar navbar-expand-lg navbar-light bg-#2a6e4e">
-                <div class="container-fluid">
+                <div class="navContainer">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><img src="assets/img/menuIcono.png" alt="Icono menu">
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -37,12 +37,10 @@
             <h2 class="titulo">NOTICIAS</h2>
 
             <!--Tarjetas-->
-            <div class="card mb-3" style="max-width: 70rem;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="assets/img/tato.jpg" class="img-fluid rounded-start" alt="Tato certificada">
-                    </div>
-                    <div class="col-md-8">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="assets/img/tato.jpg" class="card-img-top" alt="Tato certificada">
                         <div class="card-body">
                             <h5 class="card-title">¡Felicitaciones, Tato!</h5>
                             <p class="texto">Acá podemos ver a Tato en su hábitat natural, rodeada de libros, luciendo un hermoso parche después de obtener la certificación como NSO N2 el año pasado 🤓
@@ -51,31 +49,23 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="card mb-3" style="max-width: 70rem;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="assets/img/bardPost.jpg" class="img-fluid rounded-start" alt="Equipo despues de partido">
-                    </div>
-                    <div class="col-md-8">
+                <div class="col">
+                    <div class="card">
+                        <img src="assets/img/bardMovemosalmundo.jpg" class="card-img-top" alt="Bard en evento">
                         <div class="card-body">
-                            <h5 class="card-title">Día del Roller Derby</h5>
-                            <p class="texto">Feliz día al deporte que nos hace pasar por todos los estados de ánimo.
-                            A les compañeres, que siempre están ahí para bancar una pared, hacer ofensa o porque no para una cena post entrenamiento. A les oficiales y la gente que une se va cruzando en este camino. 
-                            Extrañamos ir a la plaza a entrenar, las juntadas, vernos las caras con el equipo puesto, la camiseta y los preparativos previos al partido.
-                            Ya volveremos, pero ahora nos toca cuidarnos en casa</p>
+                            <h5 class="card-title">#NosotrasMovemosElMundo</h5>
+                            <p class="texto">Ayer participamos en la apertura de la semana de la mujer trabajadora, organizado por el Ministerio de las Mujeres, Géneros y Diversidad de la Nación y el Ministerio de Cultura de la Nación en Tecnópolis Argentina.                    
+                            Estamos super felices de poder haber sido parte del hermoso evento, de lo que se promueve bajo el lema #NosotrasMovemosElMundo y en especial agradecemos el interés en difundir el deporte que hacemos con tantas ganas y esfuerzo.                  
+                            Agradecemos también a Wonderclan Roller Derby Zona Norte por jugar un hermoso partido y como siempre a les oficiales que sin elles no podría haber sido posible.                    
+                            Les invitamos a seguir con la conmemoración de la semana de la mujer del 4 al 7 de marzo en Centro Cultural Kirchner</p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="card mb-3" style="max-width: 70rem;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="assets/img/bardUniforme.jpg" class="img-fluid rounded-start" alt="Uniforme Bard">
-                    </div>
-                    <div class="col-md-8">
+                <div class="col">
+                    <div class="card">
+                        <img src="assets/img/bardUniforme.jpg" class="card-img-top" alt="Uniforme Bard">
                         <div class="card-body">
-                            <h5 class="card-title">Medidas de prención COVID-19</h5>
+                            <h5 class="card-title">Medidas de prevención COVID-19</h5>
                             <p class="texto">Compartimos algunas medidas de prevención recomendados por @wftda respecto del
                                 COVID-19 que aplicamos en nuestros entrenamientos. Recomendamos:</p>
                                 <ul>
@@ -85,34 +75,34 @@
                                     <li class="listaEnTexto">Lavarse las manos con agua y jabón o con soluciones a base de alcohol antes y después del entrenamiento.</li> 
                                     <li class="listaEnTexto">Mantener la higiene de las protecciones post entrenamiento.</li> 
                                     <li class="listaEnTexto">Evitar compartir botellas.</li> 
-                                </ul>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="card mb-3" style="max-width: 70rem;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="assets/img/bardMovemosalmundo.jpg" class="img-fluid rounded-start" alt="Bard en evento">
-                    </div>
-                    <div class="col-md-8">
+                <div class="col">
+                    <div class="card">
+                        <img src="assets/img/bardPost.jpg" class="card-img-top" alt="Equipo despues de partido">
                         <div class="card-body">
-                            <h5 class="card-title">#NosotrasMovemosElMundo</h5>
-                            <p class="texto">Ayer participamos en la apertura de la semana de la mujer trabajadora, organizado por el Ministerio de las Mujeres, Géneros y Diversidad de la Nación y el Ministerio de Cultura de la Nación en Tecnópolis Argentina.                    
-                            Estamos super felices de poder haber sido parte del hermoso evento, de lo que se promueve bajo el lema #NosotrasMovemosElMundo y en especial agradecemos el interés en difundir el
-                            deporte que hacemos con tantas ganas y esfuerzo.                    
-                            Agradecemos también a Wonderclan Roller Derby Zona Norte por jugar un hermoso partido y como siempre a les oficiales que sin elles no podría haber sido posible.                    
-                            Les invitamos a seguir con la conmemoración de la semana de la mujer del 4 al 7 de marzo en Centro Cultural Kirchner</p>
+                            <h5 class="card-title">Día del Roller Derby</h5>
+                            <p class="texto">Feliz día al deporte que nos hace pasar por todos los estados de ánimo.
+                            A les compañeres, que siempre están ahí para bancar una pared, hacer ofensa o porque no para una cena post entrenamiento. A les oficiales y la gente que une se va cruzando en este camino. 
+                            Extrañamos ir a la plaza a entrenar, las juntadas, vernos las caras con el equipo puesto, la camiseta y los preparativos previos al partido.
+                            Ya volveremos, pero ahora nos toca cuidarnos en casa</p>
                         </div>
                     </div>
                 </div>
+                
             </div>
         </section>
         
-        <footer>
-            <a href="https://www.instagram.com/bard_jungla/?hl=es"><img class="imgFooter" src="assets/img/igIcono.png" alt=""></a>
-            <a href="https://www.facebook.com/LigaBuenosAiresRD"><img class="imgFooter" src="assets/img/fbIcono.png" alt=""></a>
-            <p class="textoFooter">Buenos Aires Roller Derby 2021</p>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <span class="textoFooter">© 2021 Buenos Aires Roller Derby</span>
+            </div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><span class="textoFooter">Seguinos en nuestras redes sociales!</span></li>
+                <li class="ms-3"><a href="https://www.instagram.com/bard_jungla/?hl=es" target="_blank"><img class="imgFooter" src="assets/img/igIcono.png" alt=""></a></li>
+                <li class="ms-3"><a href="https://www.facebook.com/LigaBuenosAiresRD" target="_blank"><img class="imgFooter" src="assets/img/fbIcono.png" alt=""></a></li>
+            </ul>
         </footer>
     </main>
 

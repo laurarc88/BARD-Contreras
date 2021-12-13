@@ -16,8 +16,8 @@
 
         <!--Menu-->
         <nav class="navbar navbar-expand-lg navbar-light bg-#2a6e4e">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="navContainer">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><img src="../assets/img/menuIcono.png" alt="Icono menu">
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
@@ -55,10 +55,17 @@
         </article>
     </section>
 
-    <footer>
-        <a href="https://www.instagram.com/bard_jungla/?hl=es"><img class="imgFooter" src="../assets/img/igIcono.png" alt="logo instagram"></a>
-        <a href="https://www.facebook.com/LigaBuenosAiresRD"><img class="imgFooter" src="../assets/img/fbIcono.png" alt="logo facebook"></a>
-         <p class="textoFooter">Buenos Aires Roller Derby</p>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <span class="textoFooter">© 2021 Buenos Aires Roller Derby</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><span class="textoFooter">Seguinos en nuestras redes sociales!</span></li>
+            <li class="ms-3"><a href="https://www.instagram.com/bard_jungla/?hl=es" target="_blank"><img class="imgFooter" src="../assets/img/igIcono.png" alt=""></a></li>
+            <li class="ms-3"><a href="https://www.facebook.com/LigaBuenosAiresRD" target="_blank"><img class="imgFooter" src="../assets/img/fbIcono.png" alt=""></a></li>
+        </ul>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -16,8 +16,8 @@
         
         <!--Menu-->
         <nav class="navbar navbar-expand-lg navbar-light bg-#2a6e4e">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="navContainer">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><img src="../assets/img/menuIcono.png" alt="Icono menu">
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
@@ -37,63 +37,48 @@
 
         <!--Formulario-->
         <article>
-            <h3>Ponete en contacto con Buenos Aires Roller Derby!</h3>
-            <p class="texto">Ya sea porque quieres apoyarnos, proponernos proyectos o unirte, podes enviar tu mensaje por medio de este formulario.</p>
-            <form action="servidor.php" method="">
-                <fieldset>
-                    <legend>Escribinos</legend>
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" placeholder="escribe tu nombre"> <br>
-
-                <label for="apellido">Pronombres</label>
-                <input type="text" name="apellido" placeholder="escribe tu apellido"> <br>
-
-                <label for="email">Email</label>
-                <input type="email" name="email" placeholder="usuario@servidor.com"> <br>
-
-                <!--Menu desplegable-->
-                <p>¿Qué información te gustaría recibir?</p>
-                <select name="motivo" id="motivo">
-                    <option value="info">Información general</option>
-                    <option value="reclutamiento">Quiero formar parte del equipo</option>
-                    <option value="prensa">Prensa</option>
-                    <option value="patrocinador">Patrocinio</option> 
-                </select>
-                        
-                <!--La idea sería que esto salga si en el menú desplegable se elige "quiero formar parte del equipo"-->
-                <div>¿Sabes patinar? (si no sabes, no te preocupes, nosotres te enseñamos)</div>
-                <label for="patina">Se patinar</label>
-                <input type="radio" name="patina" value="sabe">
-                <label for="patina">No se patinar</label>
-                <input type="radio" name="patina" value="nosabe">
-
-                <div>¿Qué rol te gustaría cumplir en la liga?</div>
-                <label for="roles">Patinadore</label>
-                <input type="checkbox" name="roles" value="patinadore"> 
-                <label for="roles">Oficial con patines</label>
-                <input type="checkbox" name="roles" value="oficialpatin">
-                <label for="roles">Oficial sin patines</label>
-                <input type="checkbox" name="roles" value="nso">
-                <label for="roles">Bench</label>
-                <input type="checkbox" name="roles" value="bench">
-
-                <!--Comentarios-->
-                <h3>Dejanos un comentario</h3>
-                <textarea class="bordesRedondeados" name="comentario" id="comentario" cols="30" rows="10"></textarea>
-
-                <!--Botones-->
-                <input class="bordesRedondeados" type="submit" value="Enviar formulario">
-                <input type="reset" value="Borrar formulario">
-
-                </fieldset>
+            <form class="row g-3" action="servidor.php" method="">
+                <legend>Ponete en contacto con Buenos Aires Roller Derby!</legend>
+                <p class="texto">Ya sea porque quieres apoyarnos, proponernos proyectos o unirte, podes enviar tu mensaje por medio de este formulario.</p>
+                <div class="row g-2">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Pronombre" aria-label="Pronombre">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <input type="email" class="form-control" id="email" placeholder="e-mail">
+                </div>
+                <div>
+                    <!--Menu desplegable-->
+                    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                        <option selected>¿Qué información te gustaría recibir?</option>
+                        <option value="info">Información general</option>
+                        <option value="prensa">Prensa</option>
+                        <option value="patrocinio">Patrocinio</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Dejanos tus comentarios</textarea>
+                </div>
+                <a href="#" class="btn btn-outline-success">Enviar</a>
             </form>
         </article>
     </section>
 
-    <footer>
-        <a href="https://www.instagram.com/bard_jungla/?hl=es"><img class="imgFooter" src="../assets/img/igIcono.png" alt="logo instagram"></a>
-        <a href="https://www.facebook.com/LigaBuenosAiresRD"><img class="imgFooter" src="../assets/img/fbIcono.png" alt="logo facebook"></a>
-        <p class="textoFooter">Buenos Aires Roller Derby</p>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <span class="textoFooter">© 2021 Buenos Aires Roller Derby</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><span class="textoFooter">Seguinos en nuestras redes sociales!</span></li>
+            <li class="ms-3"><a href="https://www.instagram.com/bard_jungla/?hl=es" target="_blank"><img class="imgFooter" src="../assets/img/igIcono.png" alt=""></a></li>
+            <li class="ms-3"><a href="https://www.facebook.com/LigaBuenosAiresRD" target="_blank"><img class="imgFooter" src="../assets/img/fbIcono.png" alt=""></a></li>
+        </ul>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

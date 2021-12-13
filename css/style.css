@@ -5,6 +5,16 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "Montserrat";
+    src: url(../assets/fonts/Montserrat-Regular.ttf);
+}
+
+@font-face{
+    font-family: "Lora";
+    src: url(../assets/fonts/Lora-Regular.ttf);
+}
+
 /*grids*/
 main{
     display: grid;
@@ -23,7 +33,7 @@ header{
     background-image: url(../assets/img/portada.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Montserrat;
     padding-left: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -38,86 +48,102 @@ header{
 }
 
 header nav{
-    width: 90%;
-    max-width: 62.5rem;
-    margin: 1.25rem auto;
-    background-color: #2a6e4e;
+    width: 100%;
+    font-weight: bold;
 }
 
 .tituloHeader{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #177348;
+    color: whitesmoke;
     padding-top: 1rem;
-    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000
+    font-family: Lora;
+    font-weight: bold;
+    
 }
 
 /*Navbar bootstrap*/
 header nav a{
     text-decoration: none;
-    color: #bf4996;
+    color: whitesmoke;
     display: inline-block;
     padding: 1.25rem;
 }
+
+.navContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
+    color: whitesmoke;
+  }
 
 /*Transición*/
 .navbar-nav a:hover{
     background: #2e0259;
     font-weight: bold;
+    font-size: large;
 }
 
 /*Propiedades para Section*/
 /*Gradiente*/
 section{
-    background-image: linear-gradient(to bottom, #cb4a9a, whitesmoke);
+    background-image: linear-gradient(to bottom, #cb4a9a, white);
     grid-area: section;
     display: flex;
     flex-direction: column;
+    padding-right: 2rem;
+    padding-left: 2rem;
 }
 
 .titulo{
     text-align: center;
     padding: 2rem;
     color: #2e0259;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-family: Montserrat;
+    font-weight:bolder;
+    font-size: 39px;
 }
 
 .texto{
     color: #2e0259;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Montserrat;
+    font-size: 18px;
     padding-right: 1rem;
     text-align: left;
     margin: 0.5rem;
     display: inline-block;
+
 }
 
 .listaEnTexto{
     padding: 0;
     color: #2e0259;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Montserrat;
+    font-size: 18px;
 }
 
-.row{
-    margin-left: 2rem;
-}
-
-.card mb-3{
-    margin: 0.25;
-}
-
-.card-img-top{
-    margin-top: 0.75rem;
-}
-
+/*Propiedades tarjetas*/
 .card{
-    background-image: linear-gradient(to bottom, #cb4a9a, whitesmoke);
+    background: transparent;
+    max-width: 48rem
 }
 
 .card-title{
     color: #2e0259;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Lora;
+    font-size: 25px;
+    font-weight: bold;
     text-align: center;
 }
 .card-text{
@@ -126,11 +152,7 @@ section{
     text-align: center;
 }
 
-.card-group{
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
-
+/*Propiedades imágenes en Roller Derby*/
 .imagenIzquierda{
     width: 30rem;
     height: 15rem;
@@ -147,19 +169,29 @@ section{
     float: right;
 }
 
-.imgEquipo{
-    display: inline-block;
-    width: 20rem;
-    height: 20rem;
-    object-fit: scale-down;
+/*Propiedades botones*/
+.btn{
+    display: block;
+    margin-top: 1rem;
 }
 
-.bordesRedondeados{
-    border-radius: 0.2rem;
+
+.contenedor{
+    margin-right: 2rem;
+}
+.textoMerch{
+    color: #2e0259;
+    font-family: Montserrat;
+    font-size: 18px;
+    padding-right: 1rem;
+    text-align: left;
+    margin: 0.5rem;
+    display: inline-block;
+    justify-content: center;
 }
 
 form{
-    padding: 0.3125rem;
+    margin: 0.3125rem;
     display: flex;
     flex-direction: column;
 }
@@ -168,28 +200,14 @@ form{
 
 /*Gradiente*/
 footer{
-    background-image: linear-gradient(to top, #177348, whitesmoke);
-    padding: 2rem;
+    background: #177348;
     grid-area: footer;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .textoFooter{
-    text-align: center;
-    color: #2e0259;
-    padding: 0,5rem;
-    font-family: Arial, Helvetica, sans-serif;
+    color:whitesmoke;
+    font-family: Montserrat;
     font-weight: bold;
-    display: inline-flex;
-    justify-content: center;
 }
-
-.imgFooter{
-    width: 3rem;
-    height: 3rem;
-    padding-top: 1rem;
-    object-fit: scale-down;
-    display: inline;
-    justify-items: left;
-}
-
-
