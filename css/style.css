@@ -1,8 +1,6 @@
-
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 @font-face {
@@ -28,7 +26,6 @@ main{
 }
 
 /*Propiedades para Header*/
-
 header{
     background-image: url(../assets/img/portada.jpg);
     background-repeat: no-repeat;
@@ -88,7 +85,7 @@ header nav a{
     color: whitesmoke;
   }
 
-/*Transición*/
+/*Transición en navbar*/
 .navbar-nav a:hover{
     background: #2e0259;
     font-weight: bold;
@@ -96,7 +93,7 @@ header nav a{
 }
 
 /*Propiedades para Section*/
-/*Gradiente*/
+/*Gradiente de fondo*/
 section{
     background-image: linear-gradient(to bottom, #cb4a9a, white);
     grid-area: section;
@@ -157,7 +154,6 @@ section{
     width: 30rem;
     height: 15rem;
     object-fit: scale-down;
-    display: inline-block;
     float: left;
 }
 
@@ -165,7 +161,6 @@ section{
     width: 30rem;
     height: 15rem;
     object-fit: scale-down;
-    display: inline-block;
     float: right;
 }
 
@@ -175,10 +170,6 @@ section{
     margin-top: 1rem;
 }
 
-
-.contenedor{
-    margin-right: 2rem;
-}
 .textoMerch{
     color: #2e0259;
     font-family: Montserrat;
@@ -190,15 +181,8 @@ section{
     justify-content: center;
 }
 
-form{
-    margin: 0.3125rem;
-    display: flex;
-    flex-direction: column;
-}
-
 /*Propiedades para Footer*/
 
-/*Gradiente*/
 footer{
     background: #177348;
     grid-area: footer;
