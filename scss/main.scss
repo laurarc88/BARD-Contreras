@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../assets/fonts/Montserrat-Regular.ttf);
+}
+
+@font-face{
+    font-family: "Lora";
+    src: url(../assets/fonts/Lora-Regular.ttf);
+}
+//Importo propiedades de textos
+@import "typoTextos";
+
+//creo una variable para el fondo
+$fondo: linear-gradient(to bottom, #cb4a9a, white);
+
+/*grids*/
+main{
+    display: grid;
+    background-color: #cb4a9a;
+    height: 100vh;
+    grid-template-areas: "header"
+    "section"
+    "h2"
+    "card1" "card2" "card3"
+    "footer";
+}
+
+//anidación header
+header{
+    background-image: url(../assets/img/portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: $fuenteTextoTitulos;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    grid-area: header;
+    width: 100%;
+    a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: whitesmoke;
+        padding-top: 1rem;
+        font-family: Lora;
+        font-weight: bold;
+    }
+    nav{
+        width: 100%;
+        font-weight: bold;
+        a{
+            text-decoration: none;
+            color: whitesmoke;
+            display: inline-block;
+            padding: 1.25rem;
+        }
+        .navContainer{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar-collapse {
+            flex-basis: 100%;
+            flex-grow: 1;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .navbar-nav{
+            a{
+                &:hover{
+                    background: #2e0259;
+                    opacity: 60%;
+                    font-weight: bold;
+                    font-size: large;
+                }
+            }
+        }
+    }
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
+    color: whitesmoke;
+}
+
+/*Propiedades para Section*/
+section{
+    background-image: $fondo;
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    .titulo{
+        text-align: center;
+        padding: 2rem;
+        color: $colorTextosTitulos;
+        font-family: $fuenteTextoTitulos;
+        font-weight:bolder;
+        font-size: $tamaño-titulo;
+    }
+    div.container{
+        .texto{
+            color: $colorTextosTitulos;
+            padding-right: 1rem;
+            text-align: left;
+            margin: 0.5rem;
+            display: inline-block;
+            font-size: $tamañoTexto;
+        }
+        ul{
+            li{
+                color: $colorTextosTitulos;
+                padding-right: 1rem;
+                text-align: left;
+                margin: 0.5rem;
+                font-size: $tamañoTexto;
+            }
+        }
+        //propiedades tarjetas
+        .card{
+            background: transparent;
+            max-width: 48rem
+        }
+        
+        .card-title{
+            color: $colorTextosTitulos;
+            font-family: $typoTarjetasTitulo;
+            font-size: $tamañoTarjetasTitulo;
+            font-weight: bold;
+            text-align: center;
+        }
+        .card-text{
+            color: $colorTextosTitulos;
+            font-family: $fuenteTextoTitulos;
+            text-align: center;
+        }
+    }
+}
+
+
+/*Propiedades tarjetas*/
+
+
+/*Propiedades imágenes en Roller Derby*/
+.imagenIzquierda{
+    width: 30rem;
+    height: 15rem;
+    object-fit: scale-down;
+    float: left;
+}
+
+.imagenDerecha{
+    width: 30rem;
+    height: 15rem;
+    object-fit: scale-down;
+    float: right;
+}
+
+/*Propiedades botones*/
+.btn{
+    display: block;
+    margin-top: 1rem;
+}
+
+.textoMerch{
+    color: $colorTextosTitulos;
+    font-family: $fuenteTextoTitulos;
+    font-size: $tamañoTexto;
+    padding-right: 1rem;
+    text-align: left;
+    margin: 0.5rem;
+    display: inline-block;
+    justify-content: center;
+}
+
+/*Propiedades para Footer*/
+
+footer{
+    background: #177348;
+    grid-area: footer;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    .textoFooter{
+        color:whitesmoke;
+        font-family: $fuenteTextoTitulos;
+        font-weight: bold;
+    }
+}

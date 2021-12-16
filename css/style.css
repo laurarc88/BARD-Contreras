@@ -1,197 +1,175 @@
-*{
-    margin: 0;
-    padding: 0;
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
 }
 
 @font-face {
-    font-family: "Montserrat";
-    src: url(../assets/fonts/Montserrat-Regular.ttf);
+  font-family: "Montserrat";
+  src: url(../assets/fonts/Montserrat-Regular.ttf);
 }
-
-@font-face{
-    font-family: "Lora";
-    src: url(../assets/fonts/Lora-Regular.ttf);
+@font-face {
+  font-family: "Lora";
+  src: url(../assets/fonts/Lora-Regular.ttf);
 }
-
 /*grids*/
-main{
-    display: grid;
-    background-color: #cb4a9a;
-    height: 100vh;
-    grid-template-areas: "header"
-    "section"
-    "h2"
-    "card1" "card2" "card3"
-    "footer";
+main {
+  display: grid;
+  background-color: #cb4a9a;
+  height: 100vh;
+  grid-template-areas: "header" "section" "h2" "card1" "card2" "card3" "footer";
 }
 
-/*Propiedades para Header*/
-header{
-    background-image: url(../assets/img/portada.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: Montserrat;
-    padding-left: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    grid-area: header;
-    width: 100%;
+header {
+  background-image: url(../assets/img/portada.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Montserrat;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  grid-area: header;
+  width: 100%;
 }
-
-.logoHome{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+header a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-header nav{
-    width: 100%;
-    font-weight: bold;
+header h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  padding-top: 1rem;
+  font-family: Lora;
+  font-weight: bold;
 }
-
-.tituloHeader{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: whitesmoke;
-    padding-top: 1rem;
-    font-family: Lora;
-    font-weight: bold;
-    
+header nav {
+  width: 100%;
+  font-weight: bold;
 }
-
-/*Navbar bootstrap*/
-header nav a{
-    text-decoration: none;
-    color: whitesmoke;
-    display: inline-block;
-    padding: 1.25rem;
+header nav a {
+  text-decoration: none;
+  color: whitesmoke;
+  display: inline-block;
+  padding: 1.25rem;
 }
-
-.navContainer{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+header nav .navContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
-
-.navbar-collapse {
-    flex-basis: 100%;
-    flex-grow: 1;
-    align-items: center;
-    justify-content: space-evenly;
+header nav .navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header nav .navbar-nav a:hover {
+  background: #2e0259;
+  opacity: 60%;
+  font-weight: bold;
+  font-size: large;
 }
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
-    color: whitesmoke;
-  }
-
-/*Transición en navbar*/
-.navbar-nav a:hover{
-    background: #2e0259;
-    font-weight: bold;
-    font-size: large;
+  color: whitesmoke;
 }
 
 /*Propiedades para Section*/
-/*Gradiente de fondo*/
-section{
-    background-image: linear-gradient(to bottom, #cb4a9a, white);
-    grid-area: section;
-    display: flex;
-    flex-direction: column;
-    padding-right: 2rem;
-    padding-left: 2rem;
+section {
+  background-image: linear-gradient(to bottom, #cb4a9a, white);
+  grid-area: section;
+  display: flex;
+  flex-direction: column;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
-
-.titulo{
-    text-align: center;
-    padding: 2rem;
-    color: #2e0259;
-    font-family: Montserrat;
-    font-weight:bolder;
-    font-size: 39px;
+section .titulo {
+  text-align: center;
+  padding: 2rem;
+  color: #2e0259;
+  font-family: Montserrat;
+  font-weight: bolder;
+  font-size: 2.4375rem;
 }
-
-.texto{
-    color: #2e0259;
-    font-family: Montserrat;
-    font-size: 18px;
-    padding-right: 1rem;
-    text-align: left;
-    margin: 0.5rem;
-    display: inline-block;
-
+section div.container .texto {
+  color: #2e0259;
+  padding-right: 1rem;
+  text-align: left;
+  margin: 0.5rem;
+  display: inline-block;
+  font-size: 1.125rem;
 }
-
-.listaEnTexto{
-    padding: 0;
-    color: #2e0259;
-    font-family: Montserrat;
-    font-size: 18px;
+section div.container ul li {
+  color: #2e0259;
+  padding-right: 1rem;
+  text-align: left;
+  margin: 0.5rem;
+  font-size: 1.125rem;
+}
+section div.container .card {
+  background: transparent;
+  max-width: 48rem;
+}
+section div.container .card-title {
+  color: #2e0259;
+  font-family: Lora;
+  font-size: 1.5625rem;
+  font-weight: bold;
+  text-align: center;
+}
+section div.container .card-text {
+  color: #2e0259;
+  font-family: Montserrat;
+  text-align: center;
 }
 
 /*Propiedades tarjetas*/
-.card{
-    background: transparent;
-    max-width: 48rem
-}
-
-.card-title{
-    color: #2e0259;
-    font-family: Lora;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-}
-.card-text{
-    color: #2e0259;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-
 /*Propiedades imágenes en Roller Derby*/
-.imagenIzquierda{
-    width: 30rem;
-    height: 15rem;
-    object-fit: scale-down;
-    float: left;
+.imagenIzquierda {
+  width: 30rem;
+  height: 15rem;
+  object-fit: scale-down;
+  float: left;
 }
 
-.imagenDerecha{
-    width: 30rem;
-    height: 15rem;
-    object-fit: scale-down;
-    float: right;
+.imagenDerecha {
+  width: 30rem;
+  height: 15rem;
+  object-fit: scale-down;
+  float: right;
 }
 
 /*Propiedades botones*/
-.btn{
-    display: block;
-    margin-top: 1rem;
+.btn {
+  display: block;
+  margin-top: 1rem;
 }
 
-.textoMerch{
-    color: #2e0259;
-    font-family: Montserrat;
-    font-size: 18px;
-    padding-right: 1rem;
-    text-align: left;
-    margin: 0.5rem;
-    display: inline-block;
-    justify-content: center;
+.textoMerch {
+  color: #2e0259;
+  font-family: Montserrat;
+  font-size: 1.125rem;
+  padding-right: 1rem;
+  text-align: left;
+  margin: 0.5rem;
+  display: inline-block;
+  justify-content: center;
 }
 
 /*Propiedades para Footer*/
-
-footer{
-    background: #177348;
-    grid-area: footer;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+footer {
+  background: #177348;
+  grid-area: footer;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+footer .textoFooter {
+  color: whitesmoke;
+  font-family: Montserrat;
+  font-weight: bold;
 }
 
-.textoFooter{
-    color:whitesmoke;
-    font-family: Montserrat;
-    font-weight: bold;
-}
+/*# sourceMappingURL=style.css.map */
