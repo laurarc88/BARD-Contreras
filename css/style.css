@@ -1,25 +1,12 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
 }
 
 @font-face {
-  font-family: "Montserrat";
-  src: url(../assets/fonts/Montserrat-Regular.ttf);
-}
-@font-face {
   font-family: "Lora";
   src: url(../assets/fonts/Lora-Regular.ttf);
 }
-/*grids*/
-main {
-  display: grid;
-  background-color: #cb4a9a;
-  height: 100vh;
-  grid-template-areas: "header" "section" "h2" "card1" "card2" "card3" "footer";
-}
-
 header {
   background-image: url(../assets/img/portada.jpg);
   background-repeat: no-repeat;
@@ -40,7 +27,6 @@ header h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: whitesmoke;
   padding-top: 1rem;
   font-family: Lora;
   font-weight: bold;
@@ -77,6 +63,18 @@ header nav .navbar-nav a:hover {
   color: whitesmoke;
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url(../assets/fonts/Montserrat-Regular.ttf);
+}
+/*grids*/
+main {
+  display: grid;
+  background-color: #cb4a9a;
+  height: 100vh;
+  grid-template-areas: "header" "section" "h2" "card1" "card2" "card3" "footer";
+}
+
 /*Propiedades para Section*/
 section {
   background-image: linear-gradient(to bottom, #cb4a9a, white);
@@ -87,7 +85,6 @@ section {
   padding-left: 2rem;
 }
 section .titulo {
-  text-align: center;
   padding: 2rem;
   color: #2e0259;
   font-family: Montserrat;
@@ -96,21 +93,13 @@ section .titulo {
 }
 section div.container .texto {
   color: #2e0259;
-  padding-right: 1rem;
-  text-align: left;
-  margin: 0.5rem;
-  display: inline-block;
   font-size: 1.125rem;
 }
 section div.container ul li {
   color: #2e0259;
-  padding-right: 1rem;
-  text-align: left;
-  margin: 0.5rem;
   font-size: 1.125rem;
 }
 section div.container .card {
-  background: transparent;
   max-width: 48rem;
 }
 section div.container .card-title {
@@ -118,28 +107,10 @@ section div.container .card-title {
   font-family: Lora;
   font-size: 1.5625rem;
   font-weight: bold;
-  text-align: center;
 }
 section div.container .card-text {
   color: #2e0259;
   font-family: Montserrat;
-  text-align: center;
-}
-
-/*Propiedades tarjetas*/
-/*Propiedades imágenes en Roller Derby*/
-.imagenIzquierda {
-  width: 30rem;
-  height: 15rem;
-  object-fit: scale-down;
-  float: left;
-}
-
-.imagenDerecha {
-  width: 30rem;
-  height: 15rem;
-  object-fit: scale-down;
-  float: right;
 }
 
 /*Propiedades botones*/
@@ -152,10 +123,6 @@ section div.container .card-text {
   color: #2e0259;
   font-family: Montserrat;
   font-size: 1.125rem;
-  padding-right: 1rem;
-  text-align: left;
-  margin: 0.5rem;
-  display: inline-block;
   justify-content: center;
 }
 
@@ -167,9 +134,67 @@ footer {
   padding-right: 1.5rem;
 }
 footer .textoFooter {
-  color: whitesmoke;
   font-family: Montserrat;
   font-weight: bold;
+}
+
+.card {
+  background: transparent;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.card-text {
+  text-align: center;
+}
+
+.titulo {
+  text-align: center;
+}
+
+h1 {
+  color: whitesmoke;
+}
+
+.textoFooter {
+  color: whitesmoke;
+}
+
+.imagenDerecha, .imagenIzquierda {
+  width: 30rem;
+  height: 15rem;
+  object-fit: scale-down;
+}
+
+.imagenIzquierda {
+  float: left;
+}
+
+.imagenDerecha {
+  float: right;
+}
+
+.texto {
+  padding-right: 1rem;
+  text-align: left;
+  margin: 0.5rem;
+  display: inline-block;
+}
+
+.listaEnTexto {
+  padding-right: 1rem;
+  text-align: left;
+  margin: 0.5rem;
+  display: block;
+}
+
+.textoMerch {
+  padding-right: 1rem;
+  text-align: left;
+  margin: 0.5rem;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=style.css.map */

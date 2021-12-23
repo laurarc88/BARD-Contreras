@@ -1,0 +1,18 @@
+@mixin textosGenerales ($pdr, $ta, $ma, $dp) {
+    padding-right: $pdr;
+    text-align: $ta;
+    margin: $ma;
+    display: $dp;
+}
+
+.texto{
+    @include textosGenerales(1rem, left, 0.5rem, inline-block);
+}
+
+.listaEnTexto{
+    @include textosGenerales(1rem, left, 0.5rem, block);
+}
+
+.textoMerch{
+    @include textosGenerales(1rem, left, 0.5rem, inline-block)
+}

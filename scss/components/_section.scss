@@ -1,0 +1,78 @@
+//creo una variable para el fondo
+$fondo: linear-gradient(to bottom, #cb4a9a, white);
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../assets/fonts/Montserrat-Regular.ttf);
+}
+
+/*grids*/
+main{
+    display: grid;
+    background-color: #cb4a9a;
+    height: 100vh;
+    grid-template-areas: "header"
+    "section"
+    "h2"
+    "card1" "card2" "card3"
+    "footer";
+}
+
+/*Propiedades para Section*/
+section{
+    background-image: $fondo;
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    .titulo{
+        padding: 2rem;
+        color: $colorTextosTitulos;
+        font-family: $fuenteTextoTitulos;
+        font-weight:bolder;
+        font-size: $tamaño-titulo;
+    }
+    div.container{
+        .texto{
+            color: $colorTextosTitulos;
+            font-size: $tamañoTexto;
+        }
+        ul{
+            li{
+                color: $colorTextosTitulos;
+                font-size: $tamañoTexto;
+            }
+        }
+        //propiedades tarjetas
+        .card{
+            max-width: 48rem
+        }
+        
+        .card-title{
+            color: $colorTextosTitulos;
+            font-family: $typoTarjetasTitulo;
+            font-size: $tamañoTarjetasTitulo;
+            font-weight: bold;
+        }
+        .card-text{
+            color: $colorTextosTitulos;
+            font-family: $fuenteTextoTitulos;
+        }
+        //Propiedades Roller Derby
+    }
+}
+
+
+/*Propiedades botones*/
+.btn{
+    display: block;
+    margin-top: 1rem;
+}
+
+.textoMerch{
+    color: $colorTextosTitulos;
+    font-family: $fuenteTextoTitulos;
+    font-size: $tamañoTexto;
+    justify-content: center;
+}

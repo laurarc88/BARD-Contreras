@@ -1,0 +1,16 @@
+//Para propiedades de imágenes en Roller Derby
+%posicionImg{
+    width: 30rem;
+    height: 15rem;
+    object-fit: scale-down;
+}
+
+.imagenIzquierda{
+    float: left;
+    @extend %posicionImg
+}
+
+.imagenDerecha{
+    float: right;
+    @extend %posicionImg
+}

@@ -1,0 +1,11 @@
+/*Propiedades para Footer*/
+footer{
+    background: #177348;
+    grid-area: footer;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    .textoFooter{
+        font-family: $fuenteTextoTitulos;
+        font-weight: bold;
+    }
+}

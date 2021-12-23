@@ -1,0 +1,29 @@
+//Mapas
+$generales: (
+    colorFooterHeader: whitesmoke,
+    bg-cards: transparent,
+    cardAlineacion: center,
+);
+
+.card {
+    background: map-get($generales, bg-cards);
+}
+
+.card-title{
+    text-align: map-get($generales, cardAlineacion);
+}
+.card-text{
+    text-align: map-get($generales, cardAlineacion);
+}
+
+.titulo{
+    text-align: map-get($generales, cardAlineacion);
+}
+
+h1{
+    color: map-get($generales, colorFooterHeader);
+}
+
+.textoFooter{
+    color: map-get($generales, colorFooterHeader);
+}
