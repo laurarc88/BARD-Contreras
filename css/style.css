@@ -53,7 +53,7 @@ header nav .navbar-collapse {
   justify-content: space-evenly;
 }
 header nav .navbar-nav a:hover {
-  background: #2e0259;
+  background: #177348;
   opacity: 60%;
   font-weight: bold;
   font-size: large;
@@ -113,6 +113,16 @@ section div.container .card-text {
   font-family: Montserrat;
 }
 
+h4{
+  color: #2e0259;
+  font-family: Lora;
+  font-weight: bold;
+}
+
+.video{
+  display: flex;
+  float: center;
+}
 /*Propiedades botones*/
 .btn {
   display: block;
